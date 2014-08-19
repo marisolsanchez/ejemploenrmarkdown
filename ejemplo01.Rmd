@@ -1,0 +1,17 @@
+---
+title: "primer proyecto en rmarkdown"
+author: "marisol sánchez 136179"
+date: "Tuesday, August 19, 2014"
+output: html_document
+---
+Ejemplo elaborado `r date()`.
+```{r GenerarHistograma}
+set.seed(20140811)
+x <- rnorm(1000,mean=80,sd=10)
+hist(x,breaks=100,border="white",col=gray(.7))
+abline(v=mean(x),col="blue",lwd=2)
+
+```
+
+
+
